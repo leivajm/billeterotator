@@ -7,10 +7,12 @@ const ImageRotator = () => {
     const newAngle = Math.floor((e.target.value / 100) * 360);
     setAngle(newAngle);
   };
-
+  
   const getImageSrc = (angle) => {
-    const closestAngle = Math.round(angle / 10) * 10;
-    return `/images/bill_${closestAngle}.jpeg`;
+    const numImages = 10;
+    const increment = 360 / numImages;
+    const closestAngle = Math.round(angle / increment) * increment;
+    return `/images/bill_${closestAngle}.png`;
   };
 
   return (
