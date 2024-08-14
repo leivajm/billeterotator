@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Rotador de BilleteS</h1>
+        <h1>Rotador de Billete</h1>
       </header>
       <main>
         <ImageRotator />
